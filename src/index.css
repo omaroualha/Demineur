@@ -1,0 +1,111 @@
+
+
+.App{
+width: 497px;
+height: 600px;
+border: 1px solid black;
+
+}
+
+
+
+
+.Entete-Grid {
+  display: flex;
+  width: 497px;
+
+  flex-direction: rangee;
+  height: 55px;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #444;
+  }
+  .Entete-Grid .reset,
+  .Entete-Grid .miniteur {
+    width: 55px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .Entete-Grid .reset {
+    font-size: 25px; }
+
+
+    .grid {
+      width: 497px;
+      height: 497px;
+      border: 1px solid #444;
+       }
+      .grid .rangee {
+        display: flex;
+        height: 71px; 
+
+        }
+        .grid .rangee:last-child .cell.open{
+          background-color: pink;
+         }
+     
+          .grid .rangee .cell {
+          border-right: 1px solid #444;
+
+          width: 70px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-bottom: 1px solid #444; 
+        }
+        .grid .rangee :last-child .cell {
+          background-color: pink;
+          border-right: none;
+          border-left: none;
+          
+         }
+     
+        
+        .grid .rangee .cell.open {
+            background-color: #d4d4d4; 
+          }
+          
+          
+          .grid .rangee .cell:hover {
+              background-color: #d4d4d4;
+             }
+
+          .grid .rangee .cell:hover {
+            background-color: #eeeeee; 
+          }
+          
+          .grid .rangee .cell.open:last-child {
+            background-color: pink;
+            border-right: none;
+             }
+          
+        
+
+* {
+  margin: 0;
+  padding: 0; }
+
+html,
+body {
+  height: 100%; }
+  html #root,
+  body #root {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    html #root .App,
+    body #root .App {
+      display: flex;
+      flex-direction: column;
+      height: 592px; }
+      html #root .App h1,
+      body #root .App h1 {
+        text-align: center;
+        border-left: 1px solid #444;
+        border-top: 1px solid #444;
+        border-right: 1px solid #444; }
+
+
+
